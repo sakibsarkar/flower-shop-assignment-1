@@ -5,16 +5,23 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    
 }
 
 .flex {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.gap-86{
+    gap:200px
 }
 
 .sec1 {
     height: 100vh;
     background-color: rgba(229, 84, 115, 0.10);
+    overflow: hidden;
 
 }
 
@@ -65,8 +72,9 @@
 .first-img img {
     width: 635px;
     height: 850px;
-    margin: 15% 0 0 97px;
+    margin: 16% 0 0 97px;
     flex-shrink: 0;
+    
 }
 
 /* section 1 done */
@@ -74,8 +82,9 @@
 
 /* section 2 start */
 .sec2 {
-    height: 100vh;
     text-align: center;
+    padding: 0 0 128px 0;
+    overflow: hidden;
 }
 
 .sec2-footer {
@@ -165,12 +174,14 @@
     height: 320px;
     border-radius: 8px;
     background: rgba(39, 39, 39, 0.05);
-  
+
 }
-.service img{
+
+.service img {
     width: 88px;
-height: 88px;
+    height: 88px;
 }
+
 .service p {
 
     color: rgba(39, 39, 39, 0.80);
@@ -178,4 +189,140 @@ height: 88px;
     font-family: Lato;
     font-size: 18px;
     font-weight: 600;
+}
+
+.sec3 {
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+
+}
+
+.left h1 {
+    color: #272727;
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.left p {
+    width: 594px;
+    text-align: center;
+    margin: 32px 0;
+
+}
+
+.center-button{
+    display: flex;
+    justify-content: center;
+}
+.center-button button {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    border: none;
+    font-weight: 700;
+    padding: 20px 43px;
+    border-radius: 8px;
+    background-color: #e55473;
+    transition: 0.8s;
+    margin: auto;
+
+}
+
+/* button hover */
+.center-button button:hover{
+    box-shadow: inset 11rem 0 0 rgb(233, 18, 65);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.heroSection{
+    padding: 0 0 20rem 0; /* giiving bottom padding on secton to get some space from the bottom of the section */
+}
+    
+
+.headText{
+    text-align: center;
+    background-color: aliceblue;
+
+}
+
+.headText h1{
+    font-family: 'Courgette', cursive;
+    font-size: 2rem;
+}
+.headText p{
+    font-family: 'Comfortaa', cursive;
+    margin: 2rem 0 0 0 ;
+}
+.space{
+    margin: 0 0 0 5rem;
+}
+
+/* card style */
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 10rem;
+}
+.card{
+  
+    /* background-size: ; */
+    border: 3px solid rgba(238, 130, 238, 0);
+    width: 15rem;
+    padding: 0 0 2REM 0 ;
+    box-shadow: 0 0 10px rgba(77, 77, 77, 0.614);
+    justify-content: end;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px rgba(255, 154, 154, 0.614);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.card-container img{
+    height: 15rem;
+    width: 15rem;
+    
+
+}
+
+.info{
+    text-align: center;
+}
+
+.fa-star,.fa-star-half{
+    color: orange;
+    font-size: 0.6rem;
+}
+
+.ratings{
+    color: rgb(255, 187, 0);
+    text-decoration: underline;
+}
+.info p{
+    color: rgb(255, 187, 0);
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+}
+
+.buy{
+ padding: 0.5rem 0.8rem;
+ border:none;
+ background-color: rgb(255, 206, 10);
+ color: white;
+ transition: 0.5s;
+}
+
+.buy:hover{
+    box-shadow: inset 8rem 0 0 rgb(10, 255, 153);
+    background-color: transparent;
+    transition: 1s;
+    cursor: pointer;
+    color: rgb(22, 27, 58);
 }

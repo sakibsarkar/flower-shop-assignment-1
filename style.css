@@ -389,15 +389,19 @@
 }
 
 .buy {
-    padding: 0.5rem 0.8rem;
+    padding: .5rem 1rem;
     border: none;
-    background-color: rgb(255, 196, 0);
+    background-color: rgba(255, 0, 98, 0.671);
     color: white;
     transition: 0.5s;
+    margin: 0 0 1rem 0;
+    border-radius: 2px;
+    font-size: 1rem;
+    
 }
 
 .buy:hover {
-    box-shadow: inset 8rem 0 0 rgb(255, 92, 51);
+    box-shadow: inset 10rem 0 0 rgb(255, 3, 87);
     background-color: transparent;
     transition: 1s;
     cursor: pointer;

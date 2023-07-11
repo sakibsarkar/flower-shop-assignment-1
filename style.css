@@ -74,18 +74,19 @@
 
 }
 
-.first-img img {
-    width: 635px;
-    height: 850px;
-    margin: 0 0 -16% 97px;
-    transition: 0.9s;
-    
 
+.red-tulip{
+   
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    transition: 0.9s;
 }
 
-.first-img img:hover{
-    transition: 0.9s;
-    margin: 0 0 -16% 150px;
+.red-tulip:hover{
+    margin: 0 0 0 100px;
+    transition: 0.5s;
+
 }
 
 /* section 1 done */

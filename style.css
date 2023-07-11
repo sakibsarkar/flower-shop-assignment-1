@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Titillium+Web&display=swap');
 
 * {
     margin: 0;
@@ -8,6 +9,7 @@
 
 }
 
+/* primery class */
 .flex {
     display: flex;
     justify-content: center;
@@ -18,6 +20,8 @@
     gap: 200px
 }
 
+
+/* section 1 styles */
 .sec1 {
     height: 100vh;
     background-color: rgba(229, 84, 115, 0.10);
@@ -34,8 +38,8 @@
 
 .tittle-container h1 {
     color: #272727;
-    font-family: Lato;
-    font-size: 80px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 70px;
     width: 708px;
 
 }
@@ -62,9 +66,10 @@
 }
 
 .tittle-container button:hover {
-    box-shadow: inset 11rem 0 0 rgb(233, 18, 118);
+    box-shadow: inset 11rem 0 0 rgb(233, 18, 47);
     transition: 0.5s;
     cursor: pointer;
+    background-color: transparent;
 
 
 }
@@ -72,10 +77,15 @@
 .first-img img {
     width: 635px;
     height: 850px;
-    /* margin: 0 -1px 0 97px; */
-    position: relative;
-    bottom: 0px;
+    margin: 0 0 -16% 97px;
+    transition: 0.9s;
+    
 
+}
+
+.first-img img:hover{
+    transition: 0.9s;
+    margin: 0 0 -16% 150px;
 }
 
 /* section 1 done */
@@ -127,14 +137,14 @@
 
 
 
-
+/* main section */
 .main {
     display: flex;
     justify-content: center;
     gap: 25px;
     margin: 55px 0 0 0;
     width: 1442px;
-    /* background-color: #E55473; */
+   
 }
 
 .img-div1 {
@@ -142,13 +152,21 @@
     height: 538px;
     border-radius: 300px 300px 0px 0px;
     background-color: rgba(167, 33, 98, 0.15);
+    overflow: hidden;
 
+}
+
+.img-div1:hover .img1{
+    padding: 120px 78px 0 78px;
+    transition: 0.5s;
+   
 }
 
 .img1 {
     width: 310px;
     height: 428px;
     padding: 110px 78px 0 78px;
+    transition: 0.5s;
 
 }
 
@@ -157,27 +175,42 @@
     height: 538px;
     border-radius: 300px 300px 0px 0px;
     background-color: rgba(5, 151, 160, 0.15);
+    
 
 
+}
+.img-div2:hover .img2{
+    padding: 130px 78px 0 78px;
+    transition: 0.5s;
+   
 }
 
 .img2 {
     padding: 110px 78px 0 78px;
     width: 370px;
     height: 370px;
+    transition: 0.5s;
 }
 
 .img-div3 {
     width: 464px;
     height: 538px;
     border-radius: 300px 300px 0px 0px;
+    overflow: hidden;
     background-color: rgba(167, 33, 98, 0.15);
+
+}
+.img-div3:hover .img3{
+    padding: 80px 78px 0 78px;
+    transition: 0.5s;
+   
 }
 
 .img3 {
     padding: 67px 78px 0 78px;
     width: 314px;
     height: 471px;
+    transition: 0.5s;
 }
 
 /* service section */
@@ -198,6 +231,7 @@
 .service img {
     width: 88px;
     height: 88px;
+    margin: 0 0 28px 0;
 }
 
 .service p {
@@ -251,18 +285,19 @@
 
 /* button hover */
 .center-button button:hover {
-    box-shadow: inset 11rem 0 0 rgb(233, 18, 65);
-    transition: 0.5s;
+    box-shadow: inset 11rem 0 0 rgb(252, 4, 99);
+    transition: 0.8s;
+    background-color: transparent;
     cursor: pointer;
 }
 
 
-/* bonus section */
+/* bonusMark section */
 .heroSection {
-    padding: 0 0 20rem 0;
+    padding: 0 0 10rem 0; /* giiving bottom padding on secton to get some space from the bottom of the section */
     background-color: rgb(245, 250, 255);
 
-    /* giiving bottom padding on secton to get some space from the bottom of the section */
+   
 }
 
 
@@ -305,18 +340,18 @@
 
 .card {
 
-    /* background-size: ; */
-    border: 3px solid rgba(238, 130, 238, 0);
     width: 15rem;
     padding: 0 0 2rem 0;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(77, 77, 77, 0.614);
-    justify-content: end;
+    transition: 0.5s;
+    
 }
 
 .card:hover {
-    box-shadow: 0 0 10px rgba(255, 154, 154, 0.614);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     cursor: pointer;
+    
     transition: 0.5s;
 
 }
@@ -352,17 +387,16 @@
 .buy {
     padding: 0.5rem 0.8rem;
     border: none;
-    background-color: rgb(255, 206, 10);
+    background-color: rgb(255, 196, 0);
     color: white;
     transition: 0.5s;
 }
 
 .buy:hover {
-    box-shadow: inset 8rem 0 0 rgb(10, 255, 153);
+    box-shadow: inset 8rem 0 0 rgb(255, 92, 51);
     background-color: transparent;
     transition: 1s;
     cursor: pointer;
-    color: rgb(22, 27, 58);
 }
 
 
@@ -381,6 +415,7 @@
     font-family: Lato;
     font-size: 40px;
     font-weight: 800;
+    margin: 128px 0 0 0 ;
 }
 
 .sec4-header P {
@@ -401,7 +436,7 @@
     justify-content: center;
 }
 
-.image-container {
+.image-container{
     display: flex;
     width: 1440px;
     justify-content: center;
@@ -410,15 +445,23 @@
 
 }
 
+
 .image-container img {
     width: 342px;
     height: 396px;
+    transition: 0.5s;
+}
+
+.image-container img:hover{
+    margin: 0.5rem 0 0 0;
+    transition: 0.5s;
+    border-radius: 20px;
 }
 
 .search-section {
     width: 100%;
     height: 449px;
-    margin: 128px 0 0 0 ;
+    margin: 128px 0 ;
 
 }
 
@@ -426,12 +469,14 @@
     width: 1440px;
     height: 449px;
     background-image: url("/Amr shompod/Rectangle 9.png");
+    
 }
+
 
 .search-header {
     height: 100%;
     text-align: center;
-    
+
 }
 
 .search-header h1 {
@@ -468,7 +513,14 @@
     font-weight: 400;
     padding: 0 0 0 10px;
     margin: 48px 0 0 0;
-    
+    transition: 0.8s;
+
+}
+
+.search-header input:hover{
+    padding: 0 0 0 20px; 
+    border-radius: 15px;
+    transition: 0.5s;
 }
 
 
@@ -484,7 +536,77 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    margin:  0 0 0 16px ;
-    
+    margin: 0 0 0 16px;
+    transition: 0.5s;
 
+
+}
+.search-box button:hover{
+    box-shadow: inset 10rem 0 0 rgb(233, 18, 65);
+    transition: 0.5s;
+    cursor: pointer;
+    background: transparent;
+}
+
+footer {
+    height: 449px;
+    background: #2f3542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    color: white;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer-tittle {
+    width: 625px;
+    color: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 24px 0 32px 0;
+
+}
+
+.foot-container {
+    text-align: center;
+}
+
+.color {
+    color: #E55473;
+}
+
+.copy {
+    color: rgba(255, 255, 255, 0.40);
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+   
+}
+
+/* footer icon style */
+.icons{
+    display: flex;
+    justify-content: center;
+    /* background-color: #E55473; */
+    gap: 5rem;  
+    margin-top: 3rem;  
+}
+
+.icons i{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.icons i:hover{
+    color: white;
 }
